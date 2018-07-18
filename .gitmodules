@@ -1,0 +1,3 @@
+[submodule "Benchmarking/Code/afqsfenicsutil"]
+	path = Benchmarking/Code/afqsfenicsutil
+	url = https://github.com/afqueiruga/afqsfenicsutil
