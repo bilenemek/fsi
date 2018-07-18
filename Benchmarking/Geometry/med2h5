@@ -1,0 +1,7 @@
+#!/bin/bash
+fil=$1
+strlen=${#filename}
+filename=${fil:0:strlen-4}
+gmsh $1 -3 -v 0 $fil
+dolfin-convert "$filename.msh" "$filename.xml"
+python to_h5.py "$filename"
